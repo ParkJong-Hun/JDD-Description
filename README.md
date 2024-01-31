@@ -1,4 +1,4 @@
-# JDD (Ju-Dung-A-Li(Kuchibashi) Driven Development/くちばし駆動開発)
+# JDD (Jyu-So-Shi(origin Ju-Dung-A-Ri) Driven Development/呪詛師駆動開発)
 
 ![JDD_Logo](https://github.com/Lee-WonJun/JDD-Description/assets/10369528/e63b4e5a-b6a4-4357-807c-767df9193fa5)
 
@@ -144,7 +144,7 @@ STM（Software Transactional Memory）がサポートしていないので...
 もちろんリンクを辿っても説明みたいなもんってないです。
 
 - チーム開発にコミュニケーションスキルは必須だ。
-風遁　くちばしの術で相手を混乱させてPRに自分の怠惰が討論履歴として残らないように対話を誘導しよう。
+「領域展開口だけの人」で相手を混乱させてPRに自分の怠惰が討論履歴として残らないように対話を誘導しよう。
 
 - 承諾より容赦が簡単だ。
 何とか早くマージ（Merge）しないといけない。
