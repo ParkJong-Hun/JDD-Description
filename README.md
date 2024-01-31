@@ -1,4 +1,4 @@
-# JDD (Jyu-So-Shi(origin Ju-Dung-A-Ri) Driven Development/呪い駆動開発)
+# JDD (Jyu-So-Shi(origin Ju-Dung-A-Ri) Driven Development/呪詛駆動開発)
 
 ![JDD_Logo](https://github.com/Lee-WonJun/JDD-Description/assets/10369528/e63b4e5a-b6a4-4357-807c-767df9193fa5)
 
@@ -20,7 +20,7 @@ JDDは以下の重要な価値観に従う。
 価値があると思う。この言葉、左側のものは面倒で、右側のものは便利であるため、より高い価値を持つということだ。
 ```
 
-JDDを実践するためには休むことなく険しい道（どう）だが、着実に努力しなければならない。
+呪詛師として実践するためには休むことなく険しい道（どう）だが、着実に努力しなければならない。
 重要なことは、関連するカッコいい用語を言い出しながら、実際の問題に対する答えを回避することだ。着実な練習が必要だ。
 
 # JDDのためのガイドライン
