@@ -1,4 +1,4 @@
-# JDD (Jyu-So-Shi(origin Ju-Dung-A-Ri) Driven Development/呪詛駆動開発)
+# JDD (Jyu-So-Shi(origin Ju-Dung-A-Li) Driven Development/呪詛駆動開発)
 
 ![JDD_Logo](https://github.com/Lee-WonJun/JDD-Description/assets/10369528/e63b4e5a-b6a4-4357-807c-767df9193fa5)
 
