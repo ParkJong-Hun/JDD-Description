@@ -453,7 +453,7 @@ ITサービス企画者はサービスの企画及びロードマップ＋協議
 - [Seven concurrency models in seven weeks](http://www.yes24.com/Product/Goods/29331038)
 - [폴리글랏 프로그래밍](http://www.yes24.com/Product/Goods/12204890)
 - [Clean Code](http://www.yes24.com/Product/Goods/11681152)
-- [Clean Architecture](http://www.yes24.com/Product/Goods/77283734)
+- [Clean Architecture](http://www.yes24.com/Product/Goods/77283734)
 - [The Joy of Clojure](http://www.yes24.com/Product/Goods/24555451)
 - [Programming Scalar](http://www.yes24.com/Product/Goods/27767797)
 - [FSharp Fun and Profitブログ](https://fsharpforfunandprofit.com/)
