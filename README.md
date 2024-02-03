@@ -368,64 +368,64 @@ Nのfor文とif文で順次的に書こう。
 
 ### DBA
 
-DBMS 개발자를 믿자
+DBMSエンジニアを信じろ
 
 ```
-- N+1 문제가 자동으로 해결되지 않는 이 세상이 이상한 거다. 개발자는 신경 쓰지 말자.
+- N+1問題が自動で解決できないこの世界がおかしいのだ。エンジニアは気にしなくても良い。
 
-- fetch join + paging 문제가 자동으로 해결되지 않는 이 세상이 이상한 거다. 개발자는 신경 쓰지 말자.
+- fetch join + paging問題が自動的に解決できないこの世界がおかしいのだ。エンジニアは気にしなくても良い。
 
-- slow query 문제가 자동으로 해결되지 않는 이 세상이 이상한 거다. 개발자는 신경 쓰지 말자.
+- slow query問題が自動的に解決できないこの世界がおかしいのだ。エンジニアは気にしなくても良い。
 
-- SQL / ORM 등에서 힘겹게 쿼링하는것보다 그냥 다 불러와서 map/reduce/filter 쓰는 게 더 편하다.
+- SQL / ORMなどで頑張ってQueryするよりただ全てを持ってきてmap/reduce/filterを使う方が楽だ。
 
-- 정규화는 할 필요 없이 테이블 하나로도 충분하다. 누군가 뭐라 하면 join 비용의 절감이라고 하자.
+- 正規化はやる必要なくテーブル一つで十分だ。誰が何て言えばjoin費用を節約したと言おう。
 ```
 
-### 머신러닝
+### 機械学習
 
-요즘 기계는 대충 가르쳐도 알아서 잘 배운다.
-
-```
-- 데이터 하나가 소중한 시점에 Validation set 에 떼줄 데이터 따위 없다. 죄다 학습에 넣어버리자.
-
-- 오버피팅이 일어나면 오히려 좋다. 누군가 딴지를 걸면 "실험 환경에서는 성능이 좋았는데요."라고 말하자.
-
-- 성능이 너무 낮으면 데이터가 부족하기 때문이라고 하자.
-
-- 모델이 너무 크다면 딥러닝이 원래 그런 거라고 하자.
-
-- 모델이 너무 작다면 모델 최적화의 결과라고 하자. 최적화의 부작용으로 성능이 조금 떨어질 수 있다는 점도 곁들여주면 좋다.
-
-- training 이 너무 오래 걸린다고 하면, 더 좋은 GPU 를 쓰면 된다고 하면서 NVIDIA DGX A100 같은 것을 보여주자.
-
-- inference 가 너무 오래 걸린다고 하면, 더 좋은 GPU 를 쓰면 된다고 하면서 NVIDIA V100 같은 것을 보여주자.
-
-- Productization 은 DevOps, MLOps 엔지니어의 역할이다. 모델 리서처는 신경 쓰지 말자.
-
-- Seed값 고정을 피해라. 이로써 성능이 생각보다 안 나와도 Randomness 탓을 하며 시간을 벌 수 있다.
-```
-
-### 기획
-
-IT 서비스 기획자는 서비스에 계획 및 로드맵 수립 + 협의를 주도하고 프로젝트를 관리한다. 모두 개발자에게 맡기면 된다.
+最近の機械は適当に教えても自ら良く学ぶ。
 
 ```
-- 그건 개발자가 알아서 해야 할 일이라고 해라.
+- データ一つが大事な時点でValidation setに取ってあげるデータなんてない。全部学習に入れよう。
 
-- 그건 개발자의 실력이 부족해서 그런 거라고 해라.
+- 過学習は起きたら寧ろ良い。誰かが突っ込んだら「実験環境ではパーフォマンスが良かったんですけど。」って言おう。
 
-- 잘못된 기획을 해도 그거는 개발자들이 알아서 잘 만들면 된다고 해라.
+- パーフォマンスが低すぎたらデータが足りないからだと言おう。
 
-- 기획이 변경되어도 그거는 개발자들이 알아서 잘 만들면 된다고 해라.
+- モデルが大きすぎるとDeepLearningって元々そういうものだと言おう。
 
-- 내 일정은 소중하지만 전체 일정은 관심이 없다 나만 야근 안 하면 된다.
+- モデルが小さすぎるとモデル最適化の結果だと言おう。最適化の副作用によりパーフォマンスが少し落ちる可能性もあるっていうことも添えて言えばさらに良い。
 
-- 그냥 PPT 를 빨리 찍어서 개발자와 디자이너에게 업무 요청을 하고 설명해주고 손 털면 끝이다. 이후에 질문들은 바쁘다고 최대한 피하던가 휴가를 사용하자.
+- training時間が長すぎると言われたら、もっと良いGPUを使えば良いって言いながらNVIDIA DGX A100みたいなものを見せてあげよう。
 
-- 위에서 이 기획안으로 진행해야 한다고 결정했다고만 말해라.
+- inference時間が長すぎると言われたら、もっと良いGPUを使えば良いって言いながらNVIDIA V100みたいなものを見せてあげよう。
 
-- 위에서 결과물을 가지고 쪼면 개발자들이 퍼포먼스가 안 나온다고 말해라.
+- ProductizationはDevOps、MLOpsエンジニアの役割だ。モデルリサーチは気にするな。
+
+- Seed値の固定を避けよう。これでパーフォマンスが思ったより出なくてもRandomnessのせいにして時間を稼げる。
+```
+
+### 企画
+
+ITサービス企画者はサービスの企画及びロードマップ＋協議を主導してプロジェクトを管理する。全部エンジニアに任せれば良い。
+
+```
+- それはエンジニア側ですべきだと言おう。
+
+- それはエンジニアの実力が足りないからだと言おう。
+
+- 間違った企画を立ててもそれはエンジニアが何とか頑張って作れば良いと言おう。
+
+- 企画が変更されてもそれはエンジニアが何とか頑張って作れば良いと言おう。
+
+- 自分の日程は大切だが全体の日程は興味ない。俺だけ残業しなければ良い。
+
+- 普通にPPTを早く作ってエンジニアとデザイナーにタスクを頼んで、説明してあげて逃げれば良い。以降の質問は忙しいって言って最大限避けて休みを取ろう。
+
+- 上からこの案で進めないといけないって決めたって言おう。
+
+- 上から結果物を見て文句言ったらエンジニアたちのパーフォマンスが出ないって言おう。
 
 ```
 
@@ -434,38 +434,37 @@ IT 서비스 기획자는 서비스에 계획 및 로드맵 수립 + 협의를 �
 この文書...正直もうやりすぎたな...
 
 ```
-- 그날 배운 기술은 그날 회사 프로젝트에 적용해라. 누가 뭐라고 하면 그날 배운 지식을 자랑하면 된다
+- その日学んだ技術はその日会社のプロジェクトに適用しよう。誰がなんて言えばその日学んだ技術を自慢すれば良い。
 
-- 기술 스택을 공부하지 말고, 해당 기술 스택의 단점 리스트만 공부해라. 누가 해당 기술 스택을 물어보면, 단점을 들먹이자
+- 技術スタックを学ぶのではなく、その技術スタックのデメリットだけ勉強しよう。誰かがその技術スタックに関して聞いたら、デメリットを言い出そう
 
-- 도커같이 가상화가 조금이라도 들어간 건 사용하지 말아라. 누가 뭐라고 하면 네이티브 환경에서의 확인이 필요하다고 해라
+- dockerみたいな仮想化が少しでも入ったものは使うな。誰が何て言えばネイティブ環境での確認が必要だと言おう
 
-- 간단한 기능만 짜놓고 열심히 하는 척 게으름 피우자. 누가 뭐라고 하면 '린Lean'하게
+- 簡単な機能だけ書いて一生懸命やってるフリをしてサボろう。誰がなんていえば「ゆとり」を持って
 ```
 
 # Reference
 
 驚くと思うけど結構たくさん参考した
 
-- [유지보수하기 어렵게 코딩하는 방법: 평생 개발자로 먹고 살 수 있다](https://www.hanbit.co.kr/store/books/look.php?p_code=E2375873090)
-- [애자일 선언](https://agilemanifesto.org/iso/ko/manifesto.html)
-- [프로그래밍의 정석](http://www.yes24.com/Product/Goods/55254076)
-- [7가지 동시성 모델](http://www.yes24.com/Product/Goods/29331038)
+- [Canadian Mind Products](https://www.hanbit.co.kr/store/books/look.php?p_code=E2375873090)
+- [アジャイル宣言](https://agilemanifesto.org/iso/ja/manifesto.html)
+- [プリンシプル オブ プログラミング: 3年目までに身につけたい一生役立つ101の原理原則](http://www.yes24.com/Product/Goods/55254076)
+- [Seven concurrency models in seven weeks](http://www.yes24.com/Product/Goods/29331038)
 - [폴리글랏 프로그래밍](http://www.yes24.com/Product/Goods/12204890)
-- [클린 코드](http://www.yes24.com/Product/Goods/11681152)
-- [클린 아키텍쳐](http://www.yes24.com/Product/Goods/77283734)
-- [클로저 프로그래밍의 즐거움](http://www.yes24.com/Product/Goods/24555451)
-- [프로그래밍 스칼라](http://www.yes24.com/Product/Goods/27767797)
-- [FSharp Fun and Profit 블로그](https://fsharpforfunandprofit.com/)
-- [로버트 C 마틴 블로그](https://blog.cleancoder.com/)
-- [마틴파울러 블로그](https://martinfowler.com/)
+- [Clean Code](http://www.yes24.com/Product/Goods/11681152)
+- [Clean Architecture](http://www.yes24.com/Product/Goods/77283734)
+- [The Joy of Clojure](http://www.yes24.com/Product/Goods/24555451)
+- [Programming Scalar](http://www.yes24.com/Product/Goods/27767797)
+- [FSharp Fun and Profitブログ](https://fsharpforfunandprofit.com/)
+- [Rovert C Martinブログ](https://blog.cleancoder.com/)
+- [Martin Fowlerブログ](https://martinfowler.com/)
 - [wtfjs](https://github.com/denysdovhan/wtfjs) / [golang suck](http://www.golang.sucks/)
-- [코딩 호러의 이펙티브 프로그래밍](http://www.yes24.com/Product/Goods/8611802)
+- [Effective Programming: More Than Writing Code](http://www.yes24.com/Product/Goods/8611802)
 - [Data Oriented Programming](https://www.manning.com/books/data-oriented-programming)
 - [Amazon, 2016 Letter to Shareholders](https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders)
-- 그 외 언젠가 한 번쯤 읽어본 책들 다수
-- 그 외 언젠가 한 번쯤 읽어볼 책들 다수
-- 나무위키
+- その他いつか一回は読んだことある本多数
+- Namuwiki
 
 # Contributing
 
